@@ -26,10 +26,10 @@ Make sure to enable the plugin via its rule.
 {
   "eslintConfig": {
     "rules": {
-      "flow/check": 2
+      "flow-check/check": 2
     },
     "parser": "babel-eslint",
-    "plugins": ["flow"]
+    "plugins": ["flow-check"]
   }
 }
 ```
