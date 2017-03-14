@@ -3,7 +3,9 @@
   "version": "1.0.1",
   "description": "Integrate flowtype with eslint",
   "main": "library/index.js",
-  "files": ["library"],
+  "files": [
+    "library"
+  ],
   "scripts": {
     "start": "npm run build -- --watch",
     "test": "jest test/format.spec.js",
@@ -45,8 +47,8 @@
   "homepage": "https://github.com/marionebl/eslint-plugin-flow-check#readme",
   "devDependencies": {
     "babel-cli": "6.24.0",
-    "babel-plugin-add-module-exports": "0.2.1",
-    "babel-preset-es2015": "6.24.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.0",
     "babel-register": "6.24.0",
     "tipi-cli": "1.0.0",
     "xo": "0.16.0"
