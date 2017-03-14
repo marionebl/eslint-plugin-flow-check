@@ -9,7 +9,7 @@ function getFlowConfig(cwd) {
 	const projectRoot = getProjectRoot(cwd);
 
 	if (!projectRoot) {
-		return null;
+		return [null, null];
 	}
 
 	const configFilePath = path.join(projectRoot, '.flowconfig');
@@ -24,7 +24,7 @@ function getFlowConfig(cwd) {
 		return [err];
 	}
 
-	const [all] = config.get('all') || false;
+	const [all] = config.get('all') || [false];
 
 	const include = config.get('include')
 		.map(item => item.replace('<PROJECT_ROOT>', projectRoot));

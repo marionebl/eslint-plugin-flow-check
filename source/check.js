@@ -15,6 +15,10 @@ function check(source, options) {
 		return [err, []];
 	}
 
+	if (!config) {
+		return [null, []];
+	}
+
 	const matches = match(options.fileName, config, options.pragma);
 
 	if (!matches) {

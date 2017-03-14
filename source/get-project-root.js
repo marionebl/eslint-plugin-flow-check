@@ -4,5 +4,11 @@ import {sync as find} from 'find-up';
 export default getProjectRoot;
 
 function getProjectRoot(cwd) {
-	return path.dirname(find('.flowconfig', {cwd}));
+	const config = find('.flowconfig', {cwd});
+
+	if (!config) {
+		return config;
+	}
+
+	return path.dirname(config);
 }
