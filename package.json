@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Integrate flowtype with eslint",
   "main": "library/index.js",
+  "files": ["library"],
   "scripts": {
     "start": "npm run build -- --watch",
     "test": "jest test/format.spec.js",
