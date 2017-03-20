@@ -55,7 +55,7 @@
   },
   "dependencies": {
     "find-up": "2.1.0",
-    "flow-bin": "0.41.0",
+    "flow-bin": "0.42.0",
     "flow-config-parser": "0.3.0",
     "lodash.flatten": "4.4.0",
     "multimatch": "2.1.0"
