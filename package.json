@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-flow-check",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Integrate flowtype with eslint",
   "main": "library/index.js",
   "files": [
