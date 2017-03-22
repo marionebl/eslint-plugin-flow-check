@@ -1,8 +1,10 @@
-import {spawnSync} from 'child_process';
+import {spawn, spawnSync} from 'child_process';
 import path from 'path';
 import bin from 'flow-bin';
 
 export default flow;
+
+spawn(bin, ['start']); // start a flow server
 
 function flow(options) {
 	const result = spawnSync(bin, [
