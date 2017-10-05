@@ -13,7 +13,7 @@
 
 ```shell
 npm install --save-dev eslint \
-  eslint-babel \
+  babel-eslint \
   eslint-plugin-flow-check
 ```
 
